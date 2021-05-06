@@ -1,16 +1,135 @@
-// http://ionicframework.com/docs/theming/
+.backgroundcolor_main {
+  background-color: #303134;
+}
+.button_yellow {
+  background-color: #e4f668;
+  color: #303134;
+  font-weight: bold;
+}
+.button_outline_yellow {
+  border-color: #e4f668;
+  color: #e4f668;
+}
+.bold_text {
+  font-weight: bold;
+}
+.header_size {
+  font-size: 30px;
+}
+.text_color_white {
+  color: white;
+}
+.tpadding85 {
+  padding-top: 85px;
+}
+.tpadding50 {
+  padding-top: 50px;
+}
+.tpadding15 {
+  padding-top: 15px;
+}
+.tpadding10 {
+  padding-top: 10px;
+}
+.rlpadding30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.text_center {
+  text-align: center;
+}
+.welcome_spacing {
+  letter-spacing: 5px;
+}
+.lpadding50 {
+  padding-left: 50px;
+}
+.rpadding50 {
+  padding-right: 50px;
+}
+.opacity_54 {
+  opacity: 0.54;
+}
+.t10padding {
+  padding-top: 10px;
+}
+.h45 {
+  height: 45px;
+}
+.border_radius5 {
+  border-radius: 5px;
+}
+.label-float {
+  position: relative;
+  padding-top: 13px;
+  &.invalid {
+    label {
+      color: #f53d3d !important;
+    }
+    input {
+      border: 2px solid #f53d3d !important;
+    }
+  }
 
+  input {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    outline: none;
+    min-width: 300px;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -webkit-appearance: none;
+    &:focus {
+      border: 2px solid #e4f668;
+    }
+    &::placeholder {
+      color: transparent;
+    }
+  }
+  label {
+    color: #fff;
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 20px;
+    transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    padding-top: 5px;
+    margin-left: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    box-sizing: border-box;
+  }
+}
 
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+.label-float input:focus + label,
+input:not(:placeholder-shown):not(.invalid) + label {
+  font-size: 13px;
+  margin-left: -10px;
+  top: -10px;
+  color: #e4f668;
+  opacity: 1;
+}
+.label-float input:not(:focus):not(:placeholder-shown):not(.invalid) + label {
+  font-size: 13px;
+  top: -10px;
+  color: #fff;
+}
+
+.tpadding100 {
+  padding-top: 100px;
+}
+.tpadding120 {
+  padding-top: 120px;
+}
+.mleft50 {
+  margin-left: 50px;
+}
+.tpadding170 {
+  padding-top: 170px;
+}

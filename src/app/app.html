@@ -1,1 +1,26 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+
+    <ion-content>
+      <ion-grid class="tpadding85">
+        <ion-row>
+          <ion-col class="text_center"><img src="../assets/imgs/avatar.jpg" class="img_avt_size"></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="text_center pacifico menu_heading_textsize gray_text">Hey there!</ion-col>
+        </ion-row>
+        <ion-row> 
+          <ion-col class="text_center menu_heading_textsize font_dark bold_text">Sreeraj</ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-list class="tpadding50" no-lines>
+        <button ion-item (click)="profile()" class="text_center bpadding10 bold_text" menuClose>
+          My Profile
+        </button>
+        <button ion-item (click)="openPage(eventsPage)" class="text_center bpadding10 bold_text">
+          Balance
+        </button>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+  <ion-nav id="nav" #content [root]="rootPage" swipeBackEnabled="false"></ion-nav>

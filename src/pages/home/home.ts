@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CartPage } from '../cart/cart';
 
 /**
  * Generated class for the HomePage page.
@@ -21,5 +22,7 @@ export class HomePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
   }
-
+  cart(){
+    this.navCtrl.push(CartPage);
+  }
 }

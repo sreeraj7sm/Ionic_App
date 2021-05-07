@@ -1,6 +1,12 @@
 .backgroundcolor_main {
   background-color: #303134;
 }
+.font_dark {
+  color: #303134;
+}
+.gray_text {
+  color: gray;
+}
 .button_yellow {
   background-color: #e4f668;
   color: #303134;
@@ -16,8 +22,17 @@
 .header_size {
   font-size: 30px;
 }
+.font_size25 {
+  font-size: 25px !important;
+}
 .text_color_white {
   color: white;
+}
+.tpadding7 {
+  padding-top: 7px;
+}
+.tpadding10 {
+  padding-top: 10px;
 }
 .tpadding85 {
   padding-top: 85px;
@@ -26,10 +41,7 @@
   padding-top: 50px;
 }
 .tpadding15 {
-  padding-top: 15px;
-}
-.tpadding10 {
-  padding-top: 10px;
+  padding-top: 15px !important;
 }
 .rlpadding30 {
   padding-left: 30px;
@@ -38,11 +50,29 @@
 .text_center {
   text-align: center;
 }
+.text_right {
+  text-align: right;
+}
+.text_left {
+  text-align: left;
+}
 .welcome_spacing {
   letter-spacing: 5px;
 }
+.lpadding10 {
+  padding-left: 14px !important;
+}
 .lpadding50 {
   padding-left: 50px;
+}
+.lpadding15 {
+  padding-left: 15px;
+}
+.rpadding10 {
+  padding-right: 14px !important;
+}
+.rpadding15 {
+  padding-right: 25px;
 }
 .rpadding50 {
   padding-right: 50px;
@@ -132,4 +162,31 @@ input:not(:placeholder-shown):not(.invalid) + label {
 }
 .tpadding170 {
   padding-top: 170px;
+}
+.tpadding5 {
+  padding-top: 5px;
+}
+.toolbar-background {
+  background-color: white;
+}
+.font35 {
+  font-size: 35px;
+}
+.font25 {
+  font-size: 25px;
+}
+.font17 {
+  font-size: 17px;
+}
+.pacifico {
+  font-family: pacifico;
+}
+.menu_heading_textsize {
+  font-size: 20px;
+}
+.img_avt_size {
+  width: 100px;
+}
+.bpadding10 {
+  padding-bottom: 10px;
 }

@@ -1,34 +1,48 @@
 <ion-content class="backgroundcolor_main">
   <ion-grid>
-    <ion-row class="bold_text header_size text_color_white tpadding100">
+    <ion-row class="bold_text header_size text_color_white tpadding30">
       <ion-col class=" text_center"> Create a new account.</ion-col>
       
     </ion-row>
     <ion-row class="bold_text header_size text_color_white tpadding10 lpadding50 opacity_54 welcome_spacing">
       Register here!
     </ion-row>
-    <ion-row class="tpadding50">
+    <form (ngSubmit)="register()">
+    <ion-row class="tpadding30">
       <div class="label-float opacity_54 mleft50">
-        <input type="text"  placeholder=" " class="text_color_white"/>
+        <input type="text"  placeholder=" " class="text_color_white" name="email" [(ngModel)]="apiProvider.email" />
         <label class="opacity_54">E-mail Id</label>
+      </div>
+    </ion-row>
+    <ion-row class="tpadding15"> 
+      <div class="label-float opacity_54 mleft50">
+        <input type="text"  placeholder=" " class="text_color_white" name="name" [(ngModel)]="apiProvider.name" />
+        <label class="opacity_54">Name</label>
+      </div>
+    </ion-row>
+    <ion-row class="tpadding15"> 
+      <div class="label-float opacity_54 mleft50">
+        <input type="tel"  placeholder=" " class="text_color_white" name="phone" [(ngModel)]="apiProvider.phone" />
+        <label class="opacity_54">Phone Number</label>
       </div>
     </ion-row>
     <ion-row class="tpadding15">
       <div class="label-float opacity_54 mleft50">
-        <input type="text"  placeholder=" " class="text_color_white"/>
+        <input type="password"  placeholder=" " class="text_color_white" name="password" [(ngModel)]="apiProvider.password" />
         <label class="opacity_54">Password</label>
       </div>
     </ion-row>
     <ion-row class="tpadding15">
       <div class="label-float opacity_54 mleft50">
-        <input type="text"  placeholder=" " class="text_color_white" />
+        <input type="password"  placeholder=" " class="text_color_white" name="confpassword" [(ngModel)]="apiProvider.confpassword" />
         <label class="opacity_54">Confirm Password</label>
       </div>
-    </ion-row>
+    </ion-row> 
     
-    <ion-row class="tpadding100 lpadding50 rpadding50">
-      <button ion-button block class="h45 button_yellow border_radius5">Register</button>
+    <ion-row class="tpadding30 lpadding50 rpadding50">
+      <button ion-button block class="h45 button_yellow border_radius5" type="submit">Register</button>
     </ion-row>
+  </form>
     <ion-row class="lpadding50 rpadding50 t10padding ">
       <button ion-button block outline class="h45 button_outline_yellow border_radius5" (click)="goout()">Login</button>
     </ion-row>

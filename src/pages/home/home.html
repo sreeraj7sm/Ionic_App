@@ -20,7 +20,7 @@
 
 
   <ion-card>
-    <img src="../../assets/imgs/1.jpg">
+    <img src="../../assets/imgs/1.jpg" (click)="imageinfo()">
     <ion-card-content no-padding>
       <ion-grid no-padding>
         <ion-row class="tpadding10 gray_text bold_text">
@@ -34,7 +34,8 @@
           <ion-col col-4 class="text_right rpadding10 font17">Rs.1300</ion-col>
         </ion-row>
         <ion-row no-padding class="tpadding15">
-          <button ion-button block no-margin class="button_yellow font17" style="height: 50px;">Add to cart</button>
+          <button ion-button block no-margin class="button_yellow font17" style="height: 50px;" (click)="addCart()" *ngIf="notAdded">Add to cart</button>
+          <button ion-button block no-margin class="button_yellow font17" style="height: 50px; background-color:#303134; color: #e4f668; " (click)="addCart()" *ngIf="added">Added</button>
         </ion-row>
       </ion-grid>
     </ion-card-content>

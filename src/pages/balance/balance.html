@@ -4,12 +4,31 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
-  <ion-navbar>
-    <ion-title>balance</ion-title>
-  </ion-navbar>
-</ion-header>
-
+<ion-header no-border>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2 align-self-center class="text_center" (click)="back()"><ion-icon name="ios-arrow-back-outline" class="font_dark font35"></ion-icon></ion-col>
+        <ion-col col-8 class="text_center font_dark font25 bold_text pacifico font_size25">My Balance</ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-header> 
 <ion-content padding>
+  <ion-grid>
+    <ion-row class="tpadding85">
+      <ion-col class="text_center font_size25 publicsan">
+        Rs.13455
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="text_center gray_text font10 publicsan">
+        You can spend this much amount.
+      </ion-col>
+    </ion-row>
+    <ion-row class="tpadding50">
+      <ion-col class="text_center">
+        <button ion-button class="button_yellow" (click)="addmoney()">Add money +</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>

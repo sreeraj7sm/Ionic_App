@@ -3,7 +3,7 @@
     <ion-content>
       <ion-grid class="tpadding85">
         <ion-row>
-          <ion-col class="text_center"><img src="../assets/imgs/avatar.jpg" class="img_avt_size"></ion-col>
+          <ion-col class="text_center" (click)="profile()"><img src="../assets/imgs/avatar.jpg" class="img_avt_size" menuClose></ion-col>
         </ion-row>
         <ion-row>
           <ion-col class="text_center pacifico menu_heading_textsize gray_text">Hey there!</ion-col>
@@ -13,11 +13,14 @@
         </ion-row>
       </ion-grid>
       <ion-list class="tpadding50" no-lines>
-        <button ion-item (click)="profile()" class="text_center bpadding10 bold_text" menuClose>
-          My Profile
+        <button ion-item (click)="balance()" class="text_center bpadding10 bold_text" menuClose>
+          My Balance
         </button>
-        <button ion-item (click)="openPage(eventsPage)" class="text_center bpadding10 bold_text">
-          Balance
+        <button ion-item (click)="addmoney()" class="text_center bpadding10 bold_text" menuClose>
+          Add Money
+        </button>
+        <button ion-item (click)="logout()" class="text_center bpadding10 bold_text" menuClose>
+          Logout
         </button>
       </ion-list>
     </ion-content>

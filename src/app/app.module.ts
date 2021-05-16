@@ -3,7 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-
+import { HttpClientModule } from '@angular/common/http';
 import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
@@ -11,6 +11,9 @@ import { HomePage } from '../pages/home/home';
 import { CartPage } from '../pages/cart/cart';
 import { ProfilePage } from '../pages/profile/profile';
 import { BalancePage } from '../pages/balance/balance';
+import { ImageinfoPage } from '../pages/imageinfo/imageinfo';
+import { AddmoneyPage } from '../pages/addmoney/addmoney';
+import { LogprovProvider } from '../providers/logprov/logprov';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,14 @@ import { BalancePage } from '../pages/balance/balance';
     HomePage,
     CartPage,
     ProfilePage,
-    BalancePage
+    BalancePage,
+    ImageinfoPage,
+    AddmoneyPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -34,12 +40,15 @@ import { BalancePage } from '../pages/balance/balance';
     HomePage,
     CartPage,
     ProfilePage,
-    BalancePage
+    BalancePage,
+    ImageinfoPage,
+    AddmoneyPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    LogprovProvider
   ]
 })
 export class AppModule {}

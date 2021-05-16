@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AddmoneyPage } from '../addmoney/addmoney';
 
 /**
- * Generated class for the BalancePage page.
+ * Generated class for the ImageinfoPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,21 +10,19 @@ import { AddmoneyPage } from '../addmoney/addmoney';
 
 @IonicPage()
 @Component({
-  selector: 'page-balance',
-  templateUrl: 'balance.html',
+  selector: 'page-imageinfo',
+  templateUrl: 'imageinfo.html',
 })
-export class BalancePage {
+export class ImageinfoPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BalancePage');
+    console.log('ionViewDidLoad ImageinfoPage');
   }
   back(){
     this.navCtrl.pop();
   }
-  addmoney(){
-    this.navCtrl.push(AddmoneyPage);
-  }
+
 }

@@ -1,0 +1,31 @@
+<!--
+  Generated template for the AddmoneyPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-2 align-self-center class="text_center" (click)="back()"><ion-icon name="ios-arrow-back-outline" class="font_dark font35"></ion-icon></ion-col>
+      <ion-col col-8 class="text_center font_dark font25 bold_text pacifico font_size25">Add Money</ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header> 
+ 
+<ion-content padding>
+  <ion-row class="tpadding50">
+    <ion-item>
+      <ion-input type="tel"></ion-input>
+      <ion-label floating>Enter Amount</ion-label>
+    </ion-item>
+  </ion-row>
+
+  <ion-row class="tpadding50">
+    <ion-col class="text_center">
+      <button ion-button class="button_yellow" (click)="addmoney()">Add</button>
+    </ion-col>
+  </ion-row>
+
+
+</ion-content>
